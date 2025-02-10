@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Menu</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="images/3.png" alt="Restaurant Logo">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="images/3.png" alt="Restaurant Logo" />
+        </div>
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Menu</a>
+            <div class="dropdown-content">
+              <a href="#food">Food</a>
+              <a href="#drinks">Drinks</a>
             </div>
-            <ul class="nav-links">
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Menu</a>
-                    <div class="dropdown-content">
-                        <a href="#food">Food</a>
-                        <a href="#drinks">Drinks</a>
-                    </div>
-                </li>
-                <li><a href="#about">About</a></li>
-                <li class="reservation-box"><a href="#reservation">Reservation</a></li>
-            </ul>
-        </nav>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li class="reservation-box">
+            <a href="#reservation">Reservation</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-    
-        <section id="food" class="menu-section">
-            <h1>Our Food Menu</h1>
-            <div id="food-list" class="menu-list">
-                
-            </div>
-        </section>
+      <section id="food" class="menu-section">
+        <h1>Our Food Menu</h1>
+        <div id="food-list" class="menu-list"></div>
+      </section>
 
-      
-        <section id="drinks" class="menu-section">
-            <h1>Our Drinks Menu</h1>
-            <div id="drinks-list" class="menu-list">
-              
-            </div>
-        </section>
+      <section id="drinks" class="menu-section">
+        <h1>Our Drinks Menu</h1>
+        <div id="drinks-list" class="menu-list"></div>
+      </section>
 
-       
-        <section id="reservation" class="reservation-section">
-            <h1>Make a Reservation</h1>
-            <form id="reservation-form">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
+      <section id="reservation" class="reservation-section">
+        <h1>Make a Reservation</h1>
+        <form id="reservation-form">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
 
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="time" required>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
 
-                <label for="guests">Number of Guests:</label>
-                <input type="number" id="guests" name="guests" min="1" max="90" required>
+          <label for="guests">Number of Guests:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="90"
+            required
+          />
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
 
-                <label for="contact">Contact Information:</label>
-                <input type="text" id="contact" name="contact" required>
+          <label for="contact">Contact Information:</label>
+          <input type="text" id="contact" name="contact" required />
 
-                <button type="submit">Book Now</button>
-            </form>
-            <div id="confirmation-message"></div>
-            <div id="reservation-list"></div>
-        </section>
+          <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmation-message"></div>
+        <div id="reservation-list"></div>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Chez Yoldez . All rights reserved.</p>
+      <p>&copy; 2024 Chez Yoldez et Sarah . All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
