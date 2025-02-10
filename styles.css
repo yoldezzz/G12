@@ -1,0 +1,218 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fcf4d9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8ed2c9;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 900;
+}
+
+.navbar .logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  margin: 0 10px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #00aaa0;
+  color: #fcf4d9;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8ed2c9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #00aaa0;
+  color: #fcf4d9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.menu-section {
+  padding: 80px 20px 20px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-item-content {
+  padding: 20px;
+}
+
+.menu-item h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.menu-item p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.menu-item .price {
+  color: #00aaa0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.reservation-section {
+  padding: 20px;
+  background-color: #fcf4d9; /* First Color */
+  text-align: center;
+}
+
+#reservation-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#reservation-form label {
+  margin-top: 10px;
+}
+
+#reservation-form input {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#reservation-form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #8ed2c9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reservation-form button:hover {
+  background-color: #d55b3e;
+  color: #fcf4d9;
+}
+
+#reservation-list .reservation-details {
+  border: 2px solid #00aaa0; /* Third Color */
+  background-color: #fcf4d9; /* First Color */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+#reservation-list .reservation-details p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+#reservation-list .reservation-details .delete-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #d55b3e; /* Fourth Color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reservation-list .reservation-details .delete-button:hover {
+  background-color: #b94a2f;
+}
+
+#reservation-list .reservation-details .add-button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #8ed2c9; /* Second Color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reservation-list .reservation-details .add-button:hover {
+  background-color: #00aaa0; /* Third Color */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+footer {
+  background-color: #00aaa0;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
